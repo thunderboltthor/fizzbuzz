@@ -1,0 +1,49 @@
+# FizzBuzz
+
+This is an introduction to TDD (Test-Driven Development) using the simple FizzBuzz program. This repository will provide tests and stub methods.
+
+## Why FizzBuzz?
+
+According to the 2007 article [Why Can't Programmers.. Program?](https://blog.codinghorror.com/why-cant-programmers-program/) by Jeff Atwood, many applicants for programming or software development jobs are incapable of writing even simple programs on demand.
+
+An example program is FizzBuzz.
+
+## Specification
+
+In this example, the program will take one input:
+
+n - a positive integer
+
+The program should produce the following output:
+
+1. Print a line for every number from 1 to n
+2. For numbers divisible by 3 (without remainder), print Fizz instead of the number
+3. For numbers divisible by 5 (without remainder), print Buzz instead of the number
+4. For numbers divisible by both 3 _and_ 5 (without remainder), print FizzBuzz instead of the number.
+
+## TDD (Test-Driven Development)
+
+Test-driven development is a practice in which the developer writes unit tests prior to writing the code itself. This has a number of advantages, including:
+
+* Unit tests aren't an afterthought
+* Developers consider _how_ to test functions/methods
+* Developers can refactoring or add features with confidence, because the unit tests serve as regression tests
+* Unit tests are actually written at all
+
+### Red, Green, Refactor (Repeat)
+
+The phrase _Red, Green, Refactor_ is often used when talking about the practice of TDD. The first thing you do, as a developer, is write _one_ stub method and one or more unit tests for that method.
+
+Then you run the test and watch it fail (RED).
+
+It's important that the tests fails. If the test passes, that means the test is _vacuous_: it's not testing anything important.
+
+(I personally believe that it is imporant for another reason: failure hurts, and it's easy to take it personally and be discouraged by failure. But in this particular case, you _want_ it to fail. Besides, success never comes before a series of failures!)
+
+After you have a confirmed failing test, develop the method. Run another test. If your test passed, congratulations: you've reached GREEN!
+
+(This might be a good time to commit your code to your Git repository.)
+
+So what is the REFACTOR step? Often our first attempt to write code that passes a test won't be pretty. Now that you have something that works, you can clean up messy code, add any necessary comments, improve variable names, etc. The great part is, it will be easy to make sure your refactored code still passes the unit test.
+
+See (The Cycles of TDD](https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html) by Robert C. Martin, AKA Unble Bob, for more detail. Some people, as you can tell from that article, have spent a long time thinking about Test-Driven Development.
