@@ -6,7 +6,7 @@ This is an introduction to TDD (Test-Driven Development) using the simple FizzBu
 
 According to the 2007 article [Why Can't Programmers.. Program?](https://blog.codinghorror.com/why-cant-programmers-program/) by Jeff Atwood, many applicants for programming or software development jobs are incapable of writing even simple programs on demand.
 
-An example program is FizzBuzz.
+An example of such a program is FizzBuzz.
 
 ## Setup
 
