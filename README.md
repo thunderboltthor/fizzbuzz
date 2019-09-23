@@ -8,6 +8,24 @@ According to the 2007 article [Why Can't Programmers.. Program?](https://blog.co
 
 An example program is FizzBuzz.
 
+## Setup
+
+Make sure you configure a Python virtual environment in your workspace, e.g.:
+
+    cd fizzbuzz
+    python3 -m venv venv
+    source venv/bin/activate
+
+Install the required Python libaries:
+
+    pip3 install -r requirements.txt
+
+Run the unit tests:
+
+    python -m unittest discover -v
+
+Did all the tests _fail_ but produce no errors? If so: perfect!
+
 ## Specification
 
 In this example, the program will take one input:
@@ -23,11 +41,11 @@ The program should produce the following output:
 
 ## TDD (Test-Driven Development)
 
-Test-driven development is a practice in which the developer writes unit tests prior to writing the code itself. This has a number of advantages, including:
+Test-driven development is a practice in which the developer writes unit tests prior to writing the code itself. This has a number of advantages, including but not limited to:
 
 * Unit tests aren't an afterthought
 * Developers consider _how_ to test functions/methods
-* Developers can refactoring or add features with confidence, because the unit tests serve as regression tests
+* Developers can refactor or add features with confidence, because the unit tests serve as regression tests
 * Unit tests are actually written at all
 
 ### Red, Green, Refactor (Repeat)
@@ -38,7 +56,7 @@ Then you run the test and watch it fail (RED).
 
 It's important that the tests fails. If the test passes, that means the test is _vacuous_: it's not testing anything important.
 
-(I personally believe that it is imporant for another reason: failure hurts, and it's easy to take it personally and be discouraged by failure. But in this particular case, you _want_ it to fail. Besides, success never comes before a series of failures!)
+(I personally believe that it is imporant for another reason: failure hurts, and it's easy to take it personally and be discouraged by failure. But in this particular case, you _want_ it to fail. Besides, success never comes before a series of failures! Learn to accept failure as a step to success.)
 
 After you have a confirmed failing test, develop the method. Run another test. If your test passed, congratulations: you've reached GREEN!
 
