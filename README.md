@@ -64,4 +64,4 @@ After you have a confirmed failing test, develop the method. Run another test. I
 
 So what is the REFACTOR step? Often our first attempt to write code that passes a test won't be pretty. Now that you have something that works, you can clean up messy code, add any necessary comments, improve variable names, etc. The great part is, it will be easy to make sure your refactored code still passes the unit test.
 
-See (The Cycles of TDD](https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html) by Robert C. Martin, AKA Unble Bob, for more detail. Some people, as you can tell from that article, have spent a long time thinking about Test-Driven Development.
+See [The Cycles of TDD](https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html) by Robert C. Martin, AKA Unble Bob, for more detail. Some people, as you can tell from that article, have spent a long time thinking about Test-Driven Development.
