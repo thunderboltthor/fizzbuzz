@@ -10,7 +10,7 @@ class FizzBuzz(object):
         """Returns True if n is a countable number"""
         return False
 
-    def print(self, i):
+    def print(self, n):
         """Returns the string representation of a number unless:
            - the number is evenly divisible by 3 (returns 'Fizz')
            - the number is evenly divisible by 5 (returns 'Buzz')
