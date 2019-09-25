@@ -1,5 +1,9 @@
 # FizzBuzz
 
+[![Build Status](https://travis-ci.org/cherdt/fizzbuzz.svg?branch=master)](https://travis-ci.org/cherdt/fizzbuzz)
+
+(See that "failing" image above? That's intentional! You can fix that and get it to pass in your fork of this project.)
+
 This is an introduction to TDD (Test-Driven Development) using the simple FizzBuzz program. This repository will provide tests and stub methods.
 
 ## Why FizzBuzz?
@@ -65,3 +69,15 @@ After you have a confirmed failing test, develop the method. Run another test. I
 So what is the REFACTOR step? Often our first attempt to write code that passes a test won't be pretty. Now that you have something that works, you can clean up messy code, add any necessary comments, improve variable names, etc. The great part is, it will be easy to make sure your refactored code still passes the unit test.
 
 See [The Cycles of TDD](https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html) by Robert C. Martin, AKA Unble Bob, for more detail. Some people, as you can tell from that article, have spent a long time thinking about Test-Driven Development.
+
+## Continuous Integration (CI)
+
+There are a variety of tools that can run unit tests (and other tests) automatically when you push changes to your repository. In this example, we're using [Travis CI](https://travis-ci.org/).
+
+Once you enable Travis CI for your GitHub account and add your fork of the fizzbuzz repository in Travis CI, you can add update the "Build Failing" image in this repository.
+
+Use the following as a template, replacing `github_username` with your username:
+
+    [![Build Status](https://travis-ci.org/github_username/fizzbuzz.svg?branch=master)](https://travis-ci.org/github_username/fizzbuzz)
+
+If your tests are all passing, the image should change to a green "Build Passing" message!
