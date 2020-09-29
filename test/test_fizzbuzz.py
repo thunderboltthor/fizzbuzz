@@ -20,9 +20,9 @@ class TestFizzbuzz(unittest.TestCase):
 class TestInput(unittest.TestCase):
 
     def test_valid_input(self):
-        self.assertTrue(fizzbuzz.is_valid_countable_number(1))
-        self.assertFalse(fizzbuzz.is_valid_countable_number(0))
-        self.assertFalse(fizzbuzz.is_valid_countable_number(-1))
+        self.assertTrue(fizzbuzz.is_positive_integer(1))
+        self.assertFalse(fizzbuzz.is_positive_integer(0))
+        self.assertFalse(fizzbuzz.is_positive_integer(-1))
 
 
 if __name__ == '__main__':

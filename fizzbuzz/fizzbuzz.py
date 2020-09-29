@@ -2,8 +2,9 @@ import click
 import sys
 
 
-def is_valid_countable_number(n):
-    """Returns True if n is a countable number"""
+def is_positive_integer(n):
+    """Returns True if n is a positive integer"""
+
 
     return False
 
@@ -22,8 +23,8 @@ def process(n):
 def main(n):
 
     # Validate input
-    if not is_valid_countable_number(n):
-        print("the value of n must me a non-zero integer")
+    if not is_positive_integer(n):
+        print("the value of n must be a positive, non-zero integer")
         sys.exit()
 
     # Iterate from 1 to n inclusive and print FizzBuzz
